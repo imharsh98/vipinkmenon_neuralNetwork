@@ -1,3 +1,8 @@
+# main automation script. Calls other automation scripts.
+# zynet seems to be python framework which automates NN creation for fpga. However, I found there is a zynet.v file as well so I am not sure why do we need a verilog file for it. I understand that the zynet is actually automating the hardware side of things. Hence, the framework internally calls verilog files.
+# I feel that this file has to be run after the python training is complete as it needs the WeightsAndBiases.txt file.
+# I am not sure but it seems the author himself came up with this framework. Seems like tremendous work.
+
 from zynet import zynet
 from zynet import utils
 import numpy as np

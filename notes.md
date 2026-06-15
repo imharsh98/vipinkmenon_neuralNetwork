@@ -1,0 +1,9 @@
+the Tut-8 folder corresponds to the video lecture Part 8 of the YouTube series on the same repo. The youtube link is https://www.youtube.com/watch?v=8MVy-5xh2n8&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=71
+
+The flow of operation is first train the NN using the file trainNN.py which helps in generating the weights and biases and also the test data. Once all this is ready, head over to the mnistZynet file which has basically automated the hardware side of things where it takes these training values and does inference using Vivado.
+
+Post this the simulation has to be done. For that the genTestData.py script is used to generate the test data. Tthe zynet file has already created a testbench. First we run the genTestData.py script by replacing the target folder in the script to the one where the tb file is present. Next, we go into Vivado and manually run simulation to run this tb file which takes the test data generated and produces the output result.
+
+The author mentions that the zynet is quite generic for different neural networks and the different datasets. It works primarily for fully connected networks and does not support CNN or other more complicated networks. However, the tb file generated is MNIST specific and needs to be modified for other datasets and this is also the case for the genTestData script.
+
+For actual hardware running, they used to use Xilinx SDK before instead of Pynq. And the testing was done using C++ (nnTest.c) instead of the Python now. This is covered in the last video of the tutorial (https://www.youtube.com/watch?v=f0ydpnir8Bg&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=74).

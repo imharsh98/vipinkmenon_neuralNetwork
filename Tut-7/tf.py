@@ -1,3 +1,5 @@
+# tensorflow file to train the model and generate the parameters. It is presented as an alternate way of doing the same training as done by trainNN.py
+
 import tensorflow as tf
 import json
 

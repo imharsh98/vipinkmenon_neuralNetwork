@@ -102,5 +102,5 @@ def genAllTestData(dataWidth,IntSize):
 
 
 if __name__ == "__main__":
-    genTestData(dataWidth,IntSize,testDataNum=0)
-    #genAllTestData(dataWidth,IntSize)
+    genTestData(dataWidth,IntSize,testDataNum=0) # generates a single data; creates a header file with that data named dataValues.h.
+    #genAllTestData(dataWidth,IntSize) # generates 10000 data 

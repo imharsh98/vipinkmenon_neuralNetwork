@@ -1,9 +1,11 @@
+# this file is used to convert the weights and bias to the .mif file
+
 import json
 
 dataWidth = 16
 dataIntWidth = 1
 weightIntWidth = 4
-inputFile = "WeigntsAndBiases.txt"
+inputFile = "WeigntsAndBiases.txt" # file where weights and biases is stored.
 dataFracWidth = dataWidth-dataIntWidth
 weightFracWidth = dataWidth-weightIntWidth
 biasIntWidth = dataIntWidth+weightIntWidth

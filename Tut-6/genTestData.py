@@ -1,3 +1,5 @@
+# not sure if test data is not present in the dataset already. Most probably not. That is why it needs to be generated separately. The dataset has the training and the validation data mostly.
+
 import sys
 
 outputPath = "./testData/"
